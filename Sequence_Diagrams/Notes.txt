@@ -1,1 +1,1 @@
-There will ne notes Here regarding sequence diagrams.
+There will be notes Here regarding sequence diagrams.
