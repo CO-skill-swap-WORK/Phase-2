@@ -1,0 +1,1 @@
+this folder will contain second version of sequence diagrams as justifications are made on 1st version.
