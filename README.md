@@ -22,5 +22,4 @@ A few resources to get you started if this is your first Flutter project:
 1- Splash Screen
 
 
-https://github.com/CO-skill-swap-WORK/Phase-2/assets/88886998/1333b47f-220c-4686-9c76-ec37be201841
 
