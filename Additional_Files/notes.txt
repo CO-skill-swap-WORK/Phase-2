@@ -1,0 +1,4 @@
+this folder contains additional files related to analysis of the system, which are:
+1-buisness model
+2-use-case diagram
+user stories <after alteration>
