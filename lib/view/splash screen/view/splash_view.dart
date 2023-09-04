@@ -13,10 +13,10 @@ class SplashView extends StatefulWidget {
 class _SplashViewState extends State<SplashView> {
   @override
   Widget build(BuildContext context) {
-    return _Screen();
+    return _screen();
   }
 
-  _Screen() {
+  _screen() {
     return Scaffold(
       backgroundColor: ColorManager.primaryColorOfWhite,
       appBar: AppBar(
