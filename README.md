@@ -1,2 +1,3 @@
 # Front-End-P2
-Here is other pages of our website
+This folder contains the files related to constructing the secondary pages of our website.
+
