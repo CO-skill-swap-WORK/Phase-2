@@ -64,3 +64,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+Tools Used : Laravel ,PHP ,mysql 
+Packages : jetstream for Authentication  , Sanctum for API 
+MVC , Migration are written in project
