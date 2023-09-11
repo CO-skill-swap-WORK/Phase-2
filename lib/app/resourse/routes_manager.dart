@@ -1,4 +1,5 @@
 // this is class for Manage Route pages
+
 import 'package:flutter/material.dart';
 import 'package:ieee_app/app/consepts_string.dart';
 import 'package:ieee_app/view/chat%20screen/view/chat_view.dart';
@@ -10,14 +11,15 @@ import 'package:ieee_app/view/onBoarding%20screen/view/onboarding_view.dart';
 import 'package:ieee_app/view/payment%20screen/view/payment_view.dart';
 import 'package:ieee_app/view/post%20screen/view/post_view.dart';
 import 'package:ieee_app/view/postalCode%20screen/view/postcode_view.dart';
-import 'package:ieee_app/view/signUp%20screen/view/signup_view.dart';
+import 'package:ieee_app/view/role%20screen/view/role_user.dart';
+import 'package:ieee_app/view/singup/signUp%20Tasker%20screen/view/tasker_signup.dart';
+import 'package:ieee_app/view/singup/signUp%20customer%20screen/switch_login.dart';
 import 'package:ieee_app/view/splash%20screen/view/splash_view.dart';
 
 class RouteManager {
   static const splashRoute = '/';
   static const onBoardingRoute = '/onBoarding';
   static const loginRoute = '/login';
-  static const signUpRoute = '/signUp';
   static const forgetPasswordRoute = '/forgetPassword';
   static const postCodeRoute = '/postCode';
   static const homeRoute = '/home';
@@ -25,6 +27,10 @@ class RouteManager {
   static const postRoute = '/post';
   static const chatRoute = '/chat';
   static const messageRoute = '/message';
+  static const roleRoute = '/role';
+
+  static const signUpTaskerRoute = '/signUpTasker';
+  static const signUpCustomerRoute = '/signUpCustomer';
 }
 
 class RouteGenerate {
@@ -32,8 +38,10 @@ class RouteGenerate {
     switch (routeSettings.name) {
       case RouteManager.splashRoute:
         return MaterialPageRoute(builder: (_) => const SplashView());
-      case RouteManager.signUpRoute:
-        return MaterialPageRoute(builder: (_) => const SignUpView());
+      case RouteManager.signUpCustomerRoute:
+        return MaterialPageRoute(builder: (_) => const SwitchSignUpLogin());
+      case RouteManager.signUpTaskerRoute:
+        return MaterialPageRoute(builder: (_) => const SignUpTaskerView());
       case RouteManager.postCodeRoute:
         return MaterialPageRoute(builder: (_) => const PostCodeView());
       case RouteManager.postRoute:
@@ -52,6 +60,9 @@ class RouteGenerate {
         return MaterialPageRoute(builder: (_) => const ForgetPasswordView());
       case RouteManager.chatRoute:
         return MaterialPageRoute(builder: (_) => const ChatView());
+      case RouteManager.roleRoute:
+        return MaterialPageRoute(builder: (_) => const RoleScreen());
+
       default:
         return unDefindRoute();
     }
@@ -65,8 +76,7 @@ class RouteGenerate {
         ),
         body: const Center(
           child: Text(
-            StringConsant
-                .errorMessageBody, // Todo create an class for strings in your app z
+            StringConsant.errorMessageBody,
           ),
         ),
       ),

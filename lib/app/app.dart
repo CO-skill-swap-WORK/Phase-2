@@ -18,7 +18,6 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       onGenerateRoute: RouteGenerate.getRoute,
       initialRoute: RouteManager.splashRoute,
-      
     );
   }
 }

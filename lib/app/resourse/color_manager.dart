@@ -7,6 +7,8 @@ class ColorManager {
   static Color primaryColorOrange = const Color.fromRGBO(239, 101, 37, 1);
   static Color primaryColorOfWhite = const Color.fromRGBO(255, 243, 227, 1);
   static Color primaryColorGreen = const Color.fromRGBO(61, 179, 173, 0.7);
+  static Color primaryColorWhite = const Color.fromARGB(255, 255, 255, 255);
+  static Color primaryColorBlack = const Color.fromARGB(255, 0, 0, 1);
   // secondary Colors
   static Color secondaryColorOrange = const Color.fromRGBO(232, 133, 94, 1);
   static Color secondaryColorOfwhite = const Color.fromRGBO(239, 229, 217, 1);

@@ -1,8 +1,12 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:ieee_app/app/duration_consepts.dart';
+import 'package:ieee_app/app/resourse/app_sizes.dart';
 import 'package:ieee_app/app/resourse/assets_manager.dart';
 import 'package:ieee_app/app/resourse/color_manager.dart';
-import 'package:lottie/lottie.dart';
+import 'package:ieee_app/app/resourse/routes_manager.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -11,6 +15,18 @@ class SplashView extends StatefulWidget {
 }
 
 class _SplashViewState extends State<SplashView> {
+  _startDely() {
+    Timer(const Duration(seconds: DurationConsepts.dutrationTime), () {
+      Navigator.pushReplacementNamed(context, RouteManager.onBoardingRoute);
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState;
+    _startDely();
+  }
+
   @override
   Widget build(BuildContext context) {
     return _screen();
@@ -27,11 +43,16 @@ class _SplashViewState extends State<SplashView> {
       ),
       body: Center(
         child: SizedBox(
-          height: 150,
-          width: 150,
-          child: LottieBuilder.asset(JsonAssetes.logoJson),
+          height: AppSize.s350,
+          width: AppSize.s350,
+          child: Image.asset(ImageAssetes.logo),
         ),
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
   }
 }
